@@ -21,14 +21,14 @@
   <nav class="navbar col-sm-">
     <div class="container-fluid justify-content-center">
       <span class="navbar-brand">CRT PIZZA</span>
-      <a href="#cart"><input type="button" onclick="getReceipt()" id="btnOrder" value="Place Order"></a>
+      <a href="#cart"><input type="button" id="orderBtn" onclick="getReceipt()" id="btnOrder" value="Place Order"></a>
     </div>
   </nav>
     <div class="menuBG col-sm-">
         <form id="frmMenu">
             <section id="pizzaSize">
-                <div class="menu one">
-                    <h2>Size:</h2>
+                <h2>Size</h2>
+                <div class="menu h-auto w-auto">
                     <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza <br>
                     <input class="size" type="radio" name="Size" value="Small Pizza">Small Pizza <br>
                     <input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza <br>
@@ -37,20 +37,21 @@
                 </div>
             </section>
             <section id="pizzaMeats two">
-                <div class="menu">
-                    <h2>Meats:</h2>
-                    <input class="toppings" type="checkbox" name="Topping" value="Pepperoni">Pepperoni <br>
+                <h2>Meats</h2>
+                <div class="menu h-auto w-auto">
+                    <input class="toppings" type="checkbox" name="Topping" value="Turkey Pepperoni">Turkey Pepperoni<br>
                     <input class="toppings" type="checkbox" name="Topping" value="Ground Lamb">Ground Lamb <br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Sausage">Sausage <br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon">Canadian Bacon <br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Lamb Sausage">Lamb Sausage <br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Beef Bacon">Beef Bacon <br>
                     <input class="toppings" type="checkbox" name="Topping" value="Ground Beef">Ground Beef <br>
                     <input class="toppings" type="checkbox" name="Topping" value="Anchovy">Anchovy <br>
                     <input class="toppings" type="checkbox" name="Topping" value="Chicken">Chicken <br>
                 </div>
             </section>
             <section id="pizzaVeggies">
-                <div class="menu three">
-                    <h2>Veggies:</h2>
+                <h2>Veggies</h2>
+                <div class="menu h-auto w-auto">
+                    <input class="vegetables" type="checkbox" name="Vegetable" value="Tomatoes">Tomatoes<br>
                     <input class="vegetables" type="checkbox" name="Vegetable" value="Onions">Onions<br>
                     <input class="vegetables" type="checkbox" name="Vegetable" value="Green Peppers">Green Peppers <br>
                     <input class="vegetables" type="checkbox" name="Vegetable" value="Mushrooms">Mushrooms<br>

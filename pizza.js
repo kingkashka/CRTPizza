@@ -63,7 +63,7 @@ function getTopping(runningTotal, text1){
     getVeggies(runningTotal, text1)
 }
 
-function getVeggies(runningTotal, text1, toppingTotal){
+function getVeggies(runningTotal, text1){
     var veggieTotal = 0;
     var selectedVeggies = [];
     var veggieArray = document.getElementsByClassName("vegetables");
