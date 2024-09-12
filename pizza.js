@@ -1,3 +1,4 @@
+
 function getReceipt() {
     // THIS INITIALIZES OUR STRING SO IT CAN GET PASSED FROM FUNCTION 
     // TO FUNCTION, GROWING LINE BY LINE INTO A FULL RECEIPT 
@@ -11,6 +12,15 @@ function getReceipt() {
         text1 = `${text1} ${selectedSize} <br/>`;
   }
 }
+  if(!selectedSize) {
+    alert("You need to pick a pizza size!!");
+    // this will return the user to the pizza selection section
+    document.getElementById("pizzaSize").scrollIntoView();
+    // We can also focus on the first pizza option to guide the user.
+    sizeArray[0].focus()
+    // this will stop the function if no size is selected
+    return false; 
+  }
 
   if(selectedSize === "Personal Pizza") {
       sizeTotal = 6;

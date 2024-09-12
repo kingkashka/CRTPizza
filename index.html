@@ -10,6 +10,11 @@
     <script src="pizza.js"></script>
 </head>
 <body>
+    <script>document.body.classList.add("fade-out")
+        window.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.remove("fade-out");
+        })
+    </script>
     <!-- As a link -->
 <!-- <nav class="navbar">
     <div class="container-fluid">
@@ -20,8 +25,9 @@
   <!-- As a heading -->
   <nav class="navbar col-sm-">
     <div class="container-fluid justify-content-center">
-      <span class="navbar-brand">CRT PIZZA</span>
+      <span class="navbar-brand crt">CRT PIZZA</span>
       <a href="#cart"><input type="button" id="orderBtn" onclick="getReceipt()" id="btnOrder" value="Place Order"></a>
+      
     </div>
   </nav>
     <div class="menuBG col-sm-">
